@@ -1,0 +1,6 @@
+11/17/25
+  Workers - ImmatureGoat, SamZua
+  Things changed: 
+    Moved Hero down
+    Fixed grammatical errors
+    Made text more visible on main page, student page, and senior page
