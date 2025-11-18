@@ -4,8 +4,10 @@
    ========================================== */
 
 :root {
-    --primary-blue: #2E5BBA;
-    --accent-orange: #FF6B35;
+    --primary-red: #A55150;
+    /* idk why I can't find the primary blues in index.html */
+    --primary-blue: #A55150;
+    --accent-orange: #F0D589;
     --text-dark: #1a1a1a;
     --text-light: #666;
     --bg-light: #f8fafc;
