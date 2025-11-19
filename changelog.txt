@@ -2,6 +2,7 @@
   Workers - ImmatureGoat,SamZua
   Things changed:
     Changed color scheme
+    Made map include locations (samuel cooked)
 11/17/25
   Workers - ImmatureGoat, SamZua
   Things changed: 
