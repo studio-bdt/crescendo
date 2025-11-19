@@ -1,6 +1,7 @@
 11/18/25
-  Workers - ImmatureGoat,SamZua
+  Workers - ImmatureGoat,SamZua, NeoRazer
   Things changed:
+    Fixed navigation bar bugs where it didnt stop scrolling in the right stop and the home button didn't work.
     Changed color scheme
 11/17/25
   Workers - ImmatureGoat, SamZua

@@ -18,6 +18,7 @@
     --gradient: linear-gradient(135deg, var(--primary-blue) 0%, var(--accent-orange) 100%);
     --font-display: 'Playfair Display', serif;
     --font-body: 'Inter', sans-serif;
+    --nav-height: 150px; /* height of fixed navbar used for anchor offset */
 }
 
 * {
@@ -119,6 +120,17 @@ a {
 
 .navbar.scrolled {
     box-shadow: var(--shadow);
+}
+
+/* Ensure anchored sections are scrolled into view below the fixed navbar
+   so section headings are not covered. Adjust --nav-height if navbar size changes. */
+section {
+    scroll-margin-top: calc(var(--nav-height));
+}
+
+/* Slightly smaller offset on narrow screens (mobile) where navbar is shorter */
+@media (max-width: 768px) {
+    :root { --nav-height: 70px; }
 }
 
 .navbar .container {
