@@ -21,6 +21,52 @@
     --nav-height: 80px; /* height of fixed navbar used for anchor offset */
 }
 
+/* Strong small-screen override to keep header compact and prevent overlap/overflow */
+@media (max-width: 420px) {
+    .navbar .container {
+        padding: 0.25rem 0.6rem;
+        position: relative;
+    }
+
+    /* Hide the logo text on very small screens so it can't collide with the hamburger */
+    .logo-text { display: none; }
+    .logo-img { width: 36px; height: 36px; }
+    .logo-main { font-size: 1rem; }
+
+    /* Keep hamburger inline and right-aligned (non-absolute) */
+    .hamburger {
+        display: flex;
+        position: static;
+        margin-left: auto;
+        z-index: 1200;
+    }
+
+    /* Ensure nav-brand doesn't force width and remains compact */
+    .nav-brand { display: flex; align-items: center; gap: 0.5rem; flex: 0 0 auto; min-width: 0; }
+
+    /* Mobile nav full width and box-sizing to avoid overflow when opened */
+    .nav-menu, .nav-menu.active { box-sizing: border-box; width: 100%; left: -100%; }
+    .nav-menu.active { left: 0; }
+}
+
+@media (max-width: 400px) {
+    .navbar .logo-main {
+        font-size: 5vw;
+    }
+    .navbar .logo-sub {
+        font-size: 3vw;
+    }
+}
+
+@media (max-width: 200px) {
+    .navbar .logo-main {
+        display: none;
+    }
+    .navbar .logo-sub {
+        display: none;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -29,6 +75,11 @@
 
 html {
     scroll-behavior: smooth;
+}
+
+/* Prevent accidental horizontal overflow on very small viewports */
+html, body {
+    overflow-x: hidden;
 }
 
 body {
@@ -110,6 +161,7 @@ a {
 .navbar {
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
@@ -131,6 +183,60 @@ section {
 /* Slightly smaller offset on narrow screens (mobile) where navbar is shorter */
 @media (max-width: 768px) {
     :root { --nav-height: 70px; }
+
+    .navbar {
+        width:100%;
+    }
+}
+/* Ultra-narrow devices: make content fit and avoid horizontal scrolling */
+@media (max-width: 320px) {
+    :root { --nav-height: 60px; }
+
+    /* tighten container spacing */
+    .container { padding: 0 0.5rem; }
+    .navbar .container { padding: 0.4rem 0.75rem; }
+
+    /* smaller logo/text in navbar */
+    .logo-img { width: 36px; height: 36px; }
+    .logo-main { font-size: 1rem; }
+    .logo-sub { font-size: 0.65rem; }
+
+    /* hero adjustments */
+    .hero-logo { width: 80px; height: 80px; margin-top: 90px; }
+    .hero-title { font-size: 2rem; }
+    .hero-subtitle { font-size: 1rem; max-width: 100%; }
+    .hero-stats { display: none; }
+
+    /* ensure images scale and headings wrap */
+    img { max-width: 100%; height: auto; }
+    h1, h2, h3, h4 { overflow-wrap: break-word; word-break: break-word; }
+
+    /* mobile nav sizing */
+    .nav-menu { top: var(--nav-height); width: 100%; left: -100%; }
+
+    /* reduce large paddings that can cause overflow */
+    .container, .footer, .hero, section { padding-left: 0.5rem; padding-right: 0.5rem; }
+
+    /* Ensure nav brand can shrink and hamburger stays on the right */
+    .navbar .container { display: flex; align-items: center; gap: 0.5rem; }
+    .nav-brand { display: flex; align-items: center; gap: 0.5rem; flex: 1 1 auto; min-width: 0; }
+    .logo-text { min-width: 0; }
+    .logo-main { font-size: 1rem; line-height: 1; overflow: hidden; text-overflow: ellipsis; }
+    .logo-sub { font-size: 1rem; line-height: 1; overflow: hidden; text-overflow: ellipsis; }
+    .hamburger { margin-left: auto; }
+
+    /* Prevent nav-menu from forcing horizontal scroll when visible */
+    .nav-menu, .nav-menu.active { box-sizing: border-box; width: 100%; left: -100%; }
+    .nav-menu.active { left: 0; }
+}
+
+/* Slightly larger narrow range to catch small phones (prevent header overlap) */
+@media (max-width: 360px) {
+    .logo-img { width: 34px; height: 34px; }
+    .logo-main { font-size: 0.95rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .logo-sub { font-size: 1rem; line-height: 1; overflow: hidden; text-overflow: ellipsis; }
+    .nav-brand { gap: 0.5rem; }
+    .hamburger { z-index: 1100; }
 }
 
 .navbar .container {
@@ -938,7 +1044,7 @@ section {
     .nav-menu {
         position: fixed;
         left: -100%;
-        top: 70px;
+        top: var(--nav-height);
         flex-direction: column;
         background: white;
         width: 100%;

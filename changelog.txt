@@ -1,3 +1,8 @@
+11/19/25
+  Workers - NeoRazer
+  Things changed:
+    Attempted to fix mobile bugs.
+
 11/18/25
   Workers - ImmatureGoat,SamZua, NeoRazer
   Things changed:
