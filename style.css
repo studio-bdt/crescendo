@@ -750,6 +750,10 @@ section {
     gap: 0.5rem;
 }
 
+.fc-col-header-cell-cushion {
+    color: #666;
+}
+
 /* Map Section */
 .map-section {
     padding: 5rem 0;

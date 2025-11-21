@@ -2,6 +2,12 @@
   Workers - ImmatureGoat
   Things changed:
     Fixed the credits for ImmatureGoat
+    Added a link for Studio BDT in the credits
+    Underlined the link that opens the credits
+    Fixed the calendar white sides to be dark
+    Fixed the calendar day colors to be dark to be more visible
+    Renamed everything Crescendo Initiative to just Crescendo
+    Hamburger now shows on all mobile phones and is visible
 
 11/19/25
   Workers - NeoRazer, ImmatureGoat
