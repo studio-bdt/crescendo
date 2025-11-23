@@ -1,3 +1,9 @@
+11/23/25
+  Workers - ImmatureGoat
+  Things changed:
+    Updated the number of musicians from 32 to 46
+    Updated musicians page
+
 11/21/25
   Workers - SamZua, ImmatureGoat
   Things changed:
