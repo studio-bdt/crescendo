@@ -1,3 +1,9 @@
+11/25/25
+  Workers - ImmatureGoat
+  Things Changed:
+    Linked credits to SamZua and NeoRazer's Github
+    Changed link to Studio BDT
+
 11/23/25
   Workers - ImmatureGoat
   Things changed:
