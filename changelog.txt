@@ -2,6 +2,7 @@
   Workers - ImmatureGoat
   Things Changed:
     Added Moe counter to credits to track visits :P
+    Removed moe counter :(
 
 11/25/25
   Workers - ImmatureGoat
