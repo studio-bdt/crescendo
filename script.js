@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 const statNumbers = entry.target.querySelectorAll('.stat-number');
-                const targets = [46, 4, 3]; // Musicians, Concerts, Venues
+                const targets = [69, 4, 3]; // Musicians, Concerts, Venues
                 
                 statNumbers.forEach((stat, index) => {
                     const target = targets[index] || 0;
