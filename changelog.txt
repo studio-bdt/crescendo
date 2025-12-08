@@ -2,6 +2,7 @@
   Workers - Samzua, ImmatureGoat
   Things changed:
     changed number of musicians from 46 to 69
+    updated Studio BDT link in credits
 
 11/26/25 
   Workers - ImmatureGoat
