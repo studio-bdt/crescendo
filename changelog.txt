@@ -1,3 +1,9 @@
+12/16/25
+  Workers - ImmatureGoat
+    added domain (suwaneecrescendo.vercel.app)
+    update musicians
+    update number of musicians and concerts
+
 12/8/25
   Workers - Samzua, ImmatureGoat
   Things changed:
