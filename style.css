@@ -1232,3 +1232,7 @@ section {
   color:var(--text-light);
 }
 .school{margin-top:.15rem;}
+
+.fc-list-day {
+    color: #1A1A1A;
+}

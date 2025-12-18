@@ -164,6 +164,17 @@ function initializeCalendar() {
                     songs: 9,
                     description: 'Upcoming performance with expanded ensemble'
                 }
+            },
+            {
+                title: 'Crescendo Concert - Antebellum',
+                start: '2025-12-22T13:00:00',
+                end: '2025-12-22T13:45:00',
+                extendedProps: {
+                    venue: 'Antebellum James Burgess',
+                    musicians: 9,
+                    songs: 11,
+                    description: 'Our musicians will bring heartfelt live music to a senior community, creating meaningful moments of joy, connection, and shared memories across generations.'
+                }
             }
         ],
         eventColor: '#2E5BBA',
